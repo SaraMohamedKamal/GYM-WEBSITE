@@ -1,0 +1,82 @@
+.join {
+    display: flex;
+    padding: 0 2rem;
+    gap: 10rem;
+}
+
+.left-j {
+    color: white;
+    font-size: 3rem;
+    font-weight: bold;
+    position: relative;
+}
+
+.left-j>hr {
+    position: absolute;
+    width: 11rem;
+    border: 2px solid var(--orange);
+    border-radius: 20%;
+    margin: -10px 0;
+}
+
+.right-j {
+    justify-content: center;
+    align-items: flex-end;
+    display: flex;
+}
+
+.email-container {
+    display: flex;
+    gap: 3rem;
+    background-color: gray;
+    padding: 1rem 2rem;
+    border-radius: 7%;
+}
+
+.email-container>input {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    color: var(--lightgray);
+}
+
+::placeholder {
+    text-align: center;
+    color: var(--lightgray);
+}
+
+@media screen and (max-width:1024px) {
+    .join {
+        gap: 1rem;
+        position: relative;
+        top: 30rem;
+    }
+    .left-j {
+        font-size: x-large;
+    }
+    .right-j {
+        padding-bottom: 3rem;
+        padding-left: 3rem;
+        align-self: center;
+    }
+    @media screen and (max-width:768px) {
+        .join {
+            flex-direction: column;
+            gap: 1rem;
+            position: relative;
+            top: 100rem;
+            align-items: center;
+        }
+        .left-j {
+            font-size: x-large;
+        }
+        .right-j {
+            padding: 1rem;
+            align-self: center;
+        }
+        .email-container {
+            gap: 1rem;
+            padding: 0.5rem 1.5rem;
+        }
+    }
+}
